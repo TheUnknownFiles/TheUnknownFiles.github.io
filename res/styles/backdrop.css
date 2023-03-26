@@ -5,17 +5,21 @@
 }
 .bgd1 {
     background: url("https://theunknownfiles.github.io/res/img/backdrop1.png") repeat-y;
-    animation: bgd1 5s linear infinite;
+    animation: init 0.75s, bgd1 5s linear infinite;
     position: fixed; 
     right: 0;
 }
 .bgd2 {
     background: url("https://theunknownfiles.github.io/res/img/backdrop2.png") repeat-y;
-    animation: bgd2 5s linear infinite;
+    animation: init 0.75s, bgd2 5s linear infinite;
     position: fixed;
     left: 0;
 }
 
+@keyframes init {
+    from {opacity: 0; transform: translateX(-10px);}
+    to {opacity: 1; transform: translateX(0);}
+}
 @keyframes bgd1 {
     0%{transform:translateY(0);}
     100%{transform: translateY(-644px);}
