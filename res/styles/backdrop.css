@@ -1,0 +1,6 @@
+.bgd-1, .bgd-2 {
+    height: 1932px;
+    width: 93px;
+}
+.bgd1 {background: url("https://theunknownfiles.github.io/res/img/backdrop1.png") repeat-y;}
+.bgd-2 {background: url("https://theunknownfiles.github.io/res/img/backdrop2.png") repeat-y;}
