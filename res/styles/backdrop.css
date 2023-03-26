@@ -25,7 +25,7 @@
     100%{transform: translateY(0);}
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 579px) {
     .bgd1 {display: none;}
     .bgd2 {display: none;}
 }
