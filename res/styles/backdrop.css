@@ -1,6 +1,31 @@
-.bgd-1, .bgd-2 {
+.bgd1, .bgd2 {
     height: 1932px;
     width: 93px;
+    
 }
-.bgd1 {background: url("https://theunknownfiles.github.io/res/img/backdrop1.png") repeat-y;}
-.bgd-2 {background: url("https://theunknownfiles.github.io/res/img/backdrop2.png") repeat-y;}
+.bgd1 {
+    background: url("https://theunknownfiles.github.io/res/img/backdrop1.png") repeat-y;
+    animation: bgd1 5s linear infinite;
+    position: fixed; 
+    right: 0;
+}
+.bgd2 {
+    background: url("https://theunknownfiles.github.io/res/img/backdrop2.png") repeat-y;
+    animation: bgd2 5s linear infinite;
+    position: fixed;
+    left: 0;
+}
+
+@keyframes bgd1 {
+    0%{transform:translateY(0);}
+    100%{transform: translateY(-644px);}
+}
+@keyframes bgd2 {
+    0%{transform:translateY(-644px);}
+    100%{transform: translateY(0);}
+}
+
+@media screen and (max-width: 580px) {
+    .bgd1 {width: 0px; height: 0px;}
+    .bgd-2 {width: 0px; height: 0px;}
+}

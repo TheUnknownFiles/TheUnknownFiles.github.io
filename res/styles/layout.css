@@ -1,9 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .page {
-    margin: 0 auto;
+    overflow: auto;
+    position: fixed;
 }
