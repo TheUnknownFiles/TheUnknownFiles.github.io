@@ -2,8 +2,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-.page {
+#page {
     overflow: auto;
-    position: fixed;
+    position: relative;
+    height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
